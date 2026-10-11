@@ -37,20 +37,20 @@ TOOL_SPECS = [
 
 
 @neatlogs.span(kind="TOOL", tool_name="lookup_customer")
-def lookup_customer(customer_email: str) -> dict:
-    record = data.customer(customer_email)
+def lookup_customer(email: str) -> dict:
+    record = data.customer(email)
     if record is None:
-        raise LookupError(f"no customer with email {customer_email!r}")
+        raise LookupError(f"no customer with email {email!r}")
     return record
 
 
 @neatlogs.span(kind="TOOL", tool_name="search_kb")
 def search_kb(query: str) -> list[dict]:
-    q = query.lower()
+    tokens = query.lower().split()
     return [
         {"id": a["id"], "title": a["title"]}
         for a in data.kb_articles()
-        if q in a["title"].lower() or q in a["tags"]
+        if any(tok in a["title"].lower() or any(tok in tag.lower() for tag in a["tags"]) for tok in tokens)
     ]
 
 
