@@ -1,0 +1,118 @@
+{
+  "customers": {
+    "maya@northwind.io": {
+      "name": "Maya Iyer",
+      "company": "Northwind",
+      "plan": "enterprise",
+      "status": "active"
+    },
+    "leo@contoso.dev": {
+      "name": "Leo Brennan",
+      "company": "Contoso",
+      "plan": "pro",
+      "status": "active"
+    },
+    "ana@globex.co": {
+      "name": "Ana Ferreira",
+      "company": "Globex",
+      "plan": "pro",
+      "status": "active"
+    },
+    "kenji@initech.com": {
+      "name": "Kenji Sato",
+      "company": "Initech",
+      "plan": "enterprise",
+      "status": "active"
+    },
+    "zara@umbrella.ai": {
+      "name": "Zara Haddad",
+      "company": "Umbrella",
+      "plan": "pro",
+      "status": "past_due"
+    },
+    "omar@hooli.xyz": {
+      "name": "Omar Castillo",
+      "company": "Hooli",
+      "plan": "free",
+      "status": "active"
+    }
+  },
+  "kb": [
+    {
+      "id": "KB-101",
+      "title": "Resetting your password and recovering a locked account",
+      "tags": [
+        "password",
+        "login",
+        "locked",
+        "account",
+        "reset"
+      ]
+    },
+    {
+      "id": "KB-202",
+      "title": "Requesting a refund or disputing a duplicate charge",
+      "tags": [
+        "refund",
+        "charge",
+        "billing",
+        "invoice",
+        "duplicate"
+      ]
+    },
+    {
+      "id": "KB-203",
+      "title": "Updating a failed or expired payment method",
+      "tags": [
+        "payment",
+        "card",
+        "failed",
+        "past due",
+        "billing"
+      ]
+    },
+    {
+      "id": "KB-301",
+      "title": "API returns 500 errors or the service is down",
+      "tags": [
+        "api",
+        "500",
+        "outage",
+        "down",
+        "error",
+        "incident"
+      ]
+    },
+    {
+      "id": "KB-302",
+      "title": "Webhooks are delayed or not delivered",
+      "tags": [
+        "webhook",
+        "delayed",
+        "delivery",
+        "events"
+      ]
+    },
+    {
+      "id": "KB-401",
+      "title": "Adding seats or upgrading to an enterprise plan",
+      "tags": [
+        "upgrade",
+        "seats",
+        "enterprise",
+        "pricing",
+        "sales"
+      ]
+    },
+    {
+      "id": "KB-402",
+      "title": "Exporting your data before cancelling",
+      "tags": [
+        "export",
+        "cancel",
+        "data",
+        "account"
+      ]
+    }
+  ]
+}

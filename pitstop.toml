@@ -1,0 +1,8 @@
+# How Pitstop runs and edits this agent.
+[target]
+name = "triage"
+description = "Support-ticket triage agent: looks up the customer, searches the knowledge base, returns queue, priority, KB article and a reply."
+eval_cmd = ["{python}", "-m", "evals.run", "--out", "{out}", "--model", "{model}"]
+test_cmd = ["{python}", "-m", "pytest", "-q", "tests"]
+editable = ["triage/agent.py", "triage/tools.py", "triage/prompts.py"]
+context = ["triage/policy.py", "triage/data.py", "evals/run.py", "evals/tasks.json"]

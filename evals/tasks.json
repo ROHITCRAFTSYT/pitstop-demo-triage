@@ -1,0 +1,8 @@
+[
+  {"id": "outage-enterprise", "email": "maya@northwind.io", "body": "Our API has been returning 500 errors for the last 20 minutes and our checkout is completely down. Please help.", "queue": "technical", "priority": "P1", "kb": "KB-301", "first_name": "Maya"},
+  {"id": "webhooks-pro", "email": "leo@contoso.dev", "body": "Since this morning our production webhooks have stopped being delivered entirely, so no orders are syncing.", "queue": "technical", "priority": "P2", "kb": "KB-302", "first_name": "Leo"},
+  {"id": "double-charge", "email": "ana@globex.co", "body": "I was charged twice for my subscription this month. Can I get a refund for the duplicate?", "queue": "billing", "priority": "P3", "kb": "KB-202", "first_name": "Ana"},
+  {"id": "seats-enterprise", "email": "kenji@initech.com", "body": "We'd like to add 40 more seats before our renewal next month. Who should we talk to?", "queue": "sales", "priority": "P2", "kb": "KB-401", "first_name": "Kenji"},
+  {"id": "past-due", "email": "zara@umbrella.ai", "body": "My card expired and now I can't pay the invoice. The account says past due.", "queue": "billing", "priority": "P2", "kb": "KB-203", "first_name": "Zara"},
+  {"id": "password", "email": "omar@hooli.xyz", "body": "How do I reset my password? I'm locked out of my account.", "queue": "account", "priority": "P3", "kb": "KB-101", "first_name": "Omar"}
+]
