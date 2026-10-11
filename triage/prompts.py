@@ -8,7 +8,7 @@ SYSTEM = """You are Triage, a support agent. For each ticket:
 
 Priority policy:
 - P1: enterprise plan customer AND production outage/down.
-- P2: pro plan customer AND production issue, OR enterprise plan customer with non-outage issue.
-- P3: everything else (starter/free plans, billing questions, account issues, non-production problems)."""
+- P2: pro plan customer AND production issue, OR enterprise plan customer with non-outage issue, OR any customer with a past_due account status.
+- P3: everything else (starter/free plans, billing questions, account issues, non-production problems — but NOT past_due accounts)."""
 
 USER = "Ticket from {email}:\n\n{body}"
