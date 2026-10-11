@@ -46,11 +46,11 @@ def lookup_customer(email: str) -> dict:
 
 @neatlogs.span(kind="TOOL", tool_name="search_kb")
 def search_kb(query: str) -> list[dict]:
-    q = query.lower()
+    tokens = query.lower().split()
     return [
         {"id": a["id"], "title": a["title"]}
         for a in data.kb_articles()
-        if q in a["title"].lower() or any(q in tag.lower() for tag in a["tags"])
+        if any(tok in a["title"].lower() or any(tok in tag.lower() for tag in a["tags"]) for tok in tokens)
     ]
 
 
